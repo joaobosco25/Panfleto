@@ -1,0 +1,346 @@
+
+#container {
+    max-width: 1200px; /* Aumente a largura máxima do container */
+    margin: 0 auto;
+    padding: 0 20px; /* Reduza o padding para um espaçamento mais suave */
+}
+
+/* Estilos para o cabeçalho */
+#capacete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 225, 149);
+    width: 100%;
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    font-size: 2rem;
+    padding: 20px 0; /* Melhora o espaçamento vertical */
+    text-align: center; /* Centraliza o texto */
+    flex-direction: column;
+}
+
+
+/* Estilo para os contêineres de conteúdo */
+#corpo-branco, #corpo-cinza, #corpo-verde, #corpo-preto, #capacete {
+    max-width: 800px; /* Limitar a largura máxima dos contêineres */
+    margin: 20px auto; /* Centraliza os contêineres e adiciona espaço entre eles */
+    padding: 40px 20px; /* Um espaçamento mais consistente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    border-radius: 10px; /* Borda arredondada */
+    text-align: justify;
+    hyphens: auto;
+}
+
+#corpo-amarelo-botoes {
+    max-width: 800px; /* Limitar a largura máxima dos contêineres */
+    margin: 20px auto; /* Centraliza os contêineres e adiciona espaço entre eles */
+    padding: 40px 20px; /* Um espaçamento mais consistente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+#corpo-branco { background-color: #ffffff; }
+#corpo-cinza { background-color: #e6e2e2; }
+#corpo-verde { background-color: rgb(255, 225, 149); }
+
+#corpo-preto {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    min-height: 15vh;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Centraliza o texto */
+    overflow: hidden; /* Evita que o conteúdo ultrapasse os limites do div */
+}
+
+#corpo-preto h2, #corpo-preto p {
+    max-width: 90%; /* Limite a largura máxima do texto */
+    margin: 0;
+    word-wrap: break-word; /* Garante que o texto quebre corretamente dentro do container */
+    font-size: 1.8rem; /* Ajuste o tamanho conforme necessário */
+}
+
+#corpo-preto p {
+    font-size: 1.2rem; /* Altere o valor conforme necessário */
+    margin-top: 10px;
+}
+
+/* Estilo para os itens dentro dos contêineres */
+#primeiro-item, #segundo-item {
+    display: flex;
+    align-items: center; /* Alinhamento vertical central */
+    justify-content: center; /* Alinhamento horizontal central */
+    flex-direction: column; /* Alinha a imagem e o texto em coluna */
+    flex-wrap: wrap; /* Permitir que os elementos quebrem de linha */
+    padding: 20px 0; /* Um padding mais consistente */
+}
+
+
+/* Estilo para as imagens */
+#primeiro-item img, #segundo-item img {
+    width: 100%; /* Isso faz com que as imagens ocupem toda a largura disponível */
+    max-width: 300px; /* Defina uma largura máxima para evitar que imagens fiquem muito grandes */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+
+/* Estilo para o texto */
+.texto-info, .texto-info-rec {
+    width: 100%;
+    max-width: 60%; /* Limitar o tamanho máximo para grandes telas */
+    margin: 10px auto; /* Centraliza e adiciona espaço vertical */
+}
+
+.texto-info p, .texto-info-rec p {
+    font-size: 1.8rem;
+    line-height: 1.6; /* Melhore a legibilidade */
+    color: #333;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Estilo para os ícones e botões */
+.icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Para quebrar a linha se necessário */
+    gap: 20px; /* Diminuir o espaço entre os ícones */
+    padding: 20px 0; /* Ajustar padding superior e inferior */
+}
+
+.icones ion-icon {
+    font-size: 3rem; /* Tamanho dos ícones */
+    cursor: pointer;
+    border: 2px solid #143a19;
+    border-radius: 50%; /* Mantém o ícone redondo */
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.icones ion-icon:hover {
+    background-color: #40944c;
+    color: white;
+}
+
+/* Estilo do corpo amarelo para botões */
+#corpo-amarelo-botoes {
+    background-color: rgb(255, 225, 149);
+    width: 100%;
+    padding: 20px 10px; /* Ajuste o padding para não ser tão grande */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal:hover {
+    
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #corpo-amarelo-botoes {
+        padding: 10px; /* Menor padding em telas pequenas */
+    }
+
+    .icones {
+        gap: 10px; /* Diminuir o gap ainda mais em telas pequenas */
+    }
+
+    .icones ion-icon {
+        font-size: 2.5rem; /* Diminuir o tamanho dos ícones em telas menores */
+    }
+
+    #primeiro-item, #segundo-item {
+        flex-direction: column; /* Coloca a imagem e o texto um em cima do outro */
+    }
+
+    .texto-info, .texto-info-rec {
+        max-width: 100%; /* Use a largura total em telas pequenas */
+    }
+
+    #corpo-preto h2, #corpo-preto p {
+        font-size: 1.2rem; /* Reduz o tamanho do texto em telas menores */
+    }
+
+    .redes-sociais {
+        gap: 10px; /* Diminuir o gap em telas menores */
+    }
+
+    .redes-sociais ion-icon {
+        font-size: 3rem; /* Diminuir o tamanho dos ícones em telas menores */
+    }
+}
+
+/* Redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Diminuir o espaço entre ícones */
+    width: 100%;
+    padding: 10px;
+}
+
+/* Remove o sublinhado e estiliza o link sem interferir no design */
+.redes-sociais a {
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.redes-sociais ion-icon {
+    font-size: 2rem; /* Tamanho responsivo dos ícones */
+    cursor: pointer;
+    padding: 10px; /* Espaço entre o ícone e a borda */
+    color: #2f4931; /* Cor do ícone */
+    transition: 1s ease, transform 0.3s ease; /* Transição suave para cor de fundo e transformação */
+    border: 2px solid #000000; /* Borda ao redor dos ícones */
+    border-radius: 35%; /* Borda arredondada */
+}
+
+.redes-sociais ion-icon:hover {
+    background-color: #caffd2; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho do ícone ao passar o mouse */
+    border-radius: 20%; /* Muda a borda para mais quadrada no hover */
+    transition: 1s; /* Suavidade da transição */
+}
+
+/* Estilo do rodapé */
+#fim {
+    text-align: justify;
+    align-items: center;
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+#fim p {
+    max-width: 90%; /* Limite a largura máxima do texto */
+    margin: 0;
+    word-wrap: break-word; /* Garante que o texto quebre corretamente dentro do container */
+    padding: 20px; /* Adicione um espaçamento interno, ajuste conforme necessário */
+    width: 100%; 
+    margin-top: 1px; /* Certifique-se de que o elemento ocupe toda a largura */
+}
+
+/* Modal */
+.modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease; /* Transição para a opacidade */
+    font-size: 30px;
+}
+
+/* Quando o modal é exibido */
+.modal.show {
+    display: block; /* Exibe o modal */
+    opacity: 1; /* Torna o modal visível */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: #c1f8d1;
+    margin: 15% auto; /* Centraliza o modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px; /* Arredondamento das bordas */
+    transition: transform 1s ease; /* Transição para a transformação */
+    transform: scale(1); /* Inicia com uma escala ligeiramente menor */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    hyphens: auto;
+}
+
+/* Quando o modal é exibido */
+.modal.show .modal-content {
+    transform: scale(1); /* Escala para o tamanho normal ao abrir */
+}
+
+/* Alterar a largura máxima do modal */
+.modal-content {
+    background-color: #c1f8d1;
+    margin: 15% auto; /* Centraliza o modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Aumente a largura máxima conforme necessário */
+    border-radius: 10px; /* Arredondamento das bordas */
+    transition: transform 1s ease; /* Transição para a transformação */
+    transform: scale(1); /* Inicia com uma escala ligeiramente menor */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    text-align: justify; /* Justifica o texto dentro do modal */
+}
+
+
+
+
+#capacete {text-align: center; height: auto; font-size: auto;}
+
+body {background-color: #143a19;}
+
+@media (max-width: 768px) {
+    #capacete {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    #corpo-branco, #corpo-cinza, #corpo-verde, #corpo-preto {
+        padding: 20px 10px;
+    }
+
+    #primeiro-item, #segundo-item {
+        flex-direction: column;
+    }
+
+    .texto-info, .texto-info-rec {
+        max-width: 100%;
+    }
+
+    #corpo-preto h2, #corpo-preto p {
+        font-size: 1.2rem;
+    }
+
+    .icones ion-icon {
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
