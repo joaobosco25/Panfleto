@@ -1,29 +1,77 @@
-Hi, I’m João 👋
+## Página Profissional
+![João Bosco](assets/Capturar.png)
 
-- 💻   Languages: HTLM | CSS | ReactJS | JavaScript | TypeScript | SQL
-- 💻   Other tools: NodeJS | MySql | MongoDB | GIT
-- 🌱   I’m currently learning NodeJS | MySql | MongoDB
+# Projeto da Página Pessoal
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-brightgreen)
+Este é um projeto de uma página pessoal interativa, onde você pode conhecer mais sobre mim, como Dev e Profissional...
 
-<div align="left">
-  <a href="https://github.com/joaobosco25">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=joaobosco25&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+## Índice
+- [Descrição](#descrição)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Funcionalidades](#funcionalidades)
+- [Como Usar](#como-usar)
+- [Exemplo de Uso](#exemplo-de-uso)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
 
-<div style="display: inline_block"><br>
-  <img align="center" alt="Joao-Js" height="30" width="40" src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor">
-  <img align="center" alt="Joao-HTML" height="30" width="40" src="https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor">
-  <img align="center" alt="Joao-CSS" height="30" width="40" src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor">
-  <img align="center" alt="Joao-GIT" height="30" width="40" src="https://icongr.am/devicon/git-original.svg?size=128&color=currentColor">
-  <img align="center" alt="Joao-NODEJS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
-  <img align="center" alt="Joao-REACTJS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
-  <img align="center" alt="Joao-TS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
-</div>
-  
-  ##
- 
-<div>
+- ## Descrição
 
-<a href = "mailto:joaobosco2097@hotmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" destino ="_blank"></a>
-<a href="https://www.linkedin.com/in/jo%C3%A3o-bosco-ferreira-2a6b46225/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+🎉 Esta página foi desenvolvida para mostrar informações relevantes sobre o desenvolvedor João Bosco, incluindo seus portfólios acadêmicos e sonhos profissionais. Os usuários podem baixar documentos em PDF e visualizar detalhes sobre as metas de carreira.
+
+## Tecnologias Utilizadas
+- **HTML5**: Estrutura da página.
+- **CSS**: Estilo e layout.
+- **JavaScript**: Interação de modals
+
+## Funcionalidades
+- 📸 Exibição de uma foto de perfil e informações sobre João Bosco.
+- 📄 Acesso a documentos PDF através de links de download.
+- 🗨️ Modais para descrever sonhos profissionais e pontos fortes.
+- 🔗 Links para redes sociais (WhatsApp, LinkedIn e GitHub).
+
+## Como Usar
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/joaobosco25/Pagina-Profissional.git
+
+## Contribuição
+🤝 Contribuições são bem-vindas! Sinta-se à vontade para abrir um *pull request* ou relatar problemas.
+
+## Licença
+📜 Este projeto está licenciado sob a MIT License. Veja o arquivo `LICENSE` para mais detalhes.
+
+## Tecnologias Utilizadas
+
+| Tecnologia        | Descrição                          |
+|-------------------|------------------------------------|
+| **HTML5**         | Estrutura da página.               |
+| **CSS3**          | Estilo e layout.                   |
+| **JavaScript**    | Funcionalidade interativa, como modais. |
+| **Google Fonts**  | Tipografia.                        |
 
 
-</div>
+## Estrutura de Diretórios
+nome-do-repositorio/
+├── index.html
+├── style.css
+├── assets/
+│   ├── Capturar.png
+│   ├── Portfolio de Projeto de Software Completo.pdf
+│   ├── Portfolio Sistemas Operacionais Completo Ubuntu.pdf
+│   ├── TESE COMPLETA dESENVOLVIMENTO E GERENCIAMENTO DE BANCO DE DADOS.pdf
+│   ├── certificado (2).pdf
+│   ├── certificado (3).pdf
+│   ├── certificado (4).pdf
+│   └── bg-mobile.jpg
+├── script.js
+└── modal.js
+
+
+
+## Funcionalidades
+
+- Exibição de uma foto de perfil e informações sobre João Bosco.
+- Acesso a documentos PDF através de links de download.
+- Modais para descrever sonhos profissionais e pontos fortes.
+- Links para redes sociais (WhatsApp, LinkedIn e GitHub).
